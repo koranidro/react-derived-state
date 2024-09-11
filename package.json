@@ -8,11 +8,11 @@
 		"url": "https://koranidro.hashnode.dev"
 	},
 	"description": "React에서 파생 상태를 쉽게 운용하기 위한 라이브러리입니다.",
+	"homepage": "https://github.com/koranidro/react-derived-state",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/koranidro/react-derived-state.git"
 	},
-	"homepage": "https://github.com/koranidro/react-derived-state",
 	"bugs": {
 		"url": "https://github.com/koranidro/react-derived-state/issues",
 		"email": "koranidro@gmail.com"
@@ -42,9 +42,9 @@
 		"build": "rollup --config rollup.config.ts --configPlugin typescript",
 		"flush": "git add . && git commit -m '.'",
 		"pub:git": "git push origin main",
-		"pub:patch": "npm version patch && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish --access=public",
-		"pub:minor": "npm version minor && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish --access=public",
-		"pub:major": "npm version major && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish --access=public"
+		"pub:patch": "npm version patch && git push origin --tags && git tag -d $(git tag) && npm publish --access=public",
+		"pub:minor": "npm version minor && git push origin --tags && git tag -d $(git tag) && npm publish --access=public",
+		"pub:major": "npm version major && git push origin --tags && git tag -d $(git tag) && npm publish --access=public"
 	},
 	"dependencies": {
 		"react": "^18"
