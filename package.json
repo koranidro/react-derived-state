@@ -1,59 +1,71 @@
 {
-  "name": "@koranidro/react-derived-state",
-  "license": "MIT",
-  "author": "koranidro <koranidro@gmail.com>",
-  "description": "React에서 파생 상태를 쉽게 운용하기 위한 라이브러리입니다.",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/koranidro/react-derived-state.git"
-  },
-  "homepage": "",
-  "keywords": [
-	"koranidro",
-	"고라니드로",
-	"derived state",
-	"파생 상태"
-  ],
-  "type": "module",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs",
-      "default": "./dist/index.mjs"
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "dev": "vite",
-    "build": "rollup --config rollup.config.ts --configPlugin typescript",
-    "flush": "git add . && git commit -m '.'",
-    "pub:patch": "npm version patch && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish --access=public",
-    "pub:minor": "npm version minor && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish --access=public",
-    "pub:major": "npm version major && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish --access=public"
-  },
-  "dependencies": {
-    "react": "^18"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.9.0",
-	"@rollup/plugin-commonjs": "^26.0.1",
-    "@rollup/plugin-terser": "^0.4.4",
-    "@rollup/plugin-typescript": "^11.1.6",
-	"rollup-plugin-dts": "^6.1.1",
-	"react-dom": "^18",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "@vitejs/plugin-react": "^4.3.1",
-    "eslint": "^9.9.0",
-    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
-    "eslint-plugin-react-refresh": "^0.4.9",
-    "globals": "^15.9.0",
-	"tslib": "^2.6.3",
-    "typescript": "^5.5.3",
-    "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
-  }
+	"version": "0.0.0",
+	"name": "@koranidro/react-derived-state",
+	"license": "MIT",
+	"author": {
+		"name": "koranidro",
+		"email": "koranidro@gmail.com",
+		"url": "https://koranidro.hashnode.dev"
+	},
+	"description": "React에서 파생 상태를 쉽게 운용하기 위한 라이브러리입니다.",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/koranidro/react-derived-state.git"
+	},
+	"homepage": "https://github.com/koranidro/react-derived-state",
+	"bugs": {
+		"url": "https://github.com/koranidro/react-derived-state/issues",
+		"email": "koranidro@gmail.com"
+	},
+	"keywords": [
+		"koranidro",
+		"고라니드로",
+		"state",
+		"상태",
+		"derived state",
+		"파생 상태"
+	],
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.cjs",
+			"default": "./dist/index.mjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"dev": "vite",
+		"build": "rollup --config rollup.config.ts --configPlugin typescript",
+		"flush": "git add . && git commit -m '.'",
+		"pub:git": "git push origin main",
+		"pub:patch": "npm version patch && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish --access=public",
+		"pub:minor": "npm version minor && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish --access=public",
+		"pub:major": "npm version major && git push origin main && git push origin --tags && git tag -d $(git tag) && npm publish --access=public"
+	},
+	"dependencies": {
+		"react": "^18"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.9.0",
+		"@rollup/plugin-commonjs": "^26.0.1",
+		"@rollup/plugin-terser": "^0.4.4",
+		"@rollup/plugin-typescript": "^11.1.6",
+		"rollup-plugin-dts": "^6.1.1",
+		"react-dom": "^18",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"@vitejs/plugin-react": "^4.3.1",
+		"eslint": "^9.9.0",
+		"eslint-plugin-react-hooks": "^5.1.0-rc.0",
+		"eslint-plugin-react-refresh": "^0.4.9",
+		"globals": "^15.9.0",
+		"tslib": "^2.6.3",
+		"typescript": "^5.5.3",
+		"typescript-eslint": "^8.0.1",
+		"vite": "^5.4.1"
+	}
 }

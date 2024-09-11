@@ -4,7 +4,7 @@ function compareDependencies<D extends any[]>(oldDeps: D | undefined, newDeps: D
 	return (
 		oldDeps !== undefined &&
 		oldDeps.length === newDeps.length &&
-		!oldDeps.some((dep, i) => !Object.is(dep, newDeps[i]))
+		oldDeps.every((dep, i) => Object.is(dep, newDeps[i]))
 	);
 }
 
