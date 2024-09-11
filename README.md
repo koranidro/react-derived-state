@@ -18,7 +18,7 @@ npm install @koranidro/react-derived-state
 2. 상태의 보존을 의미론적으로 보장합니다. 즉, 의존성 변경 또는 마운트 해제 외의 어떠한 경우에도 상태를 폐기하지 않습니다. 이는 `useMemo`가 성능 향상이 목적인 것에 반해 보존 자체가 목적이기 때문입니다.
 3. 마운트 후에는 동시성 렌더링 환경에서 안전합니다. 즉, 마운트 후에는 커밋되지 않은 렌더링 상황에서도 상태를 보존합니다.
 
-사용법은 아래와 같습니다.
+아래는 사용 예제입니다.
 
 ```typescript
 import { useState } from "react";
@@ -54,7 +54,7 @@ Promise의 상태에 따라 아래과 같은 동작을 수행합니다.
 
 처음 전달된 `Promise`는 반드시 대기 상태로 평가됩니다. 따라서 렌더링 간 참조를 유지할 필요가 있습니다.
 
-사용법은 아래와 같습니다.
+아래는 사용 예제입니다.
 
 ```typescript
 import { Suspense } from "react";
@@ -89,7 +89,7 @@ function Component() {
 
 이 훅은 객체의 참조 자체에 의미가 있거나 필수 기능이 비동기적으로 수행되는 경우 유용할 수 있습니다.
 
-사용법은 아래와 같습니다.
+아래는 사용 예제입니다.
 
 ```typescript
 import { useState } from "react";
