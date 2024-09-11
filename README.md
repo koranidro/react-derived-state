@@ -8,7 +8,7 @@ npm install @koranidro/react-derived-state
 
 ## 2. 용도 및 사용법
 
-### 2-1. useDerivedState
+### 2-1. `useDerivedState`
 
 파생 상태를 보존 운용하기 위한 React 훅입니다. 일반적으로 파생 상태를 사용할 때는 보존이 필요하지 않지만, 객체의 참조 유지 등의 이유로 필요한 경우가 있습니다.
 
@@ -42,7 +42,7 @@ function Component() {
 }
 ```
 
-### 2-2. Fulfilled
+### 2-2. `Fulfilled`
 
 React 환경에서 `Promise`를 쉽게 운용하기 위한 컴포넌트입니다.
 
@@ -75,7 +75,7 @@ function Component() {
 }
 ```
 
-### 2-3. useDerivedStateWithSideEffect
+### 2-3. `useDerivedStateWithSideEffect`
 
 아래에 모두 해당하는 경우, 이 훅의 사용을 고려해볼 수 있습니다.
 
